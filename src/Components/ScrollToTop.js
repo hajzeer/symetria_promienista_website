@@ -10,7 +10,8 @@ function ScrollToTop({ history, children }) {
         return () => {
             unlisten();
         }
-    }, []);
+        // eslint-disable-next-line
+    },[]);
 
     return <Fragment>{children}</Fragment>;
 }
