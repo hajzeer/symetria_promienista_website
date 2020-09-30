@@ -30,9 +30,9 @@ const WorkImageStyled = styled.img`
     height: 300px;
     margin: 30px;
     
-    @media (max-width: 786px) {
-    width: 600px;
-    height: 600px;
+    @media (min-width: 768px) {
+    width: 500px;
+    height: 500px;
     margin: 40px;
     
 }

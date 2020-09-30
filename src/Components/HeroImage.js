@@ -33,9 +33,9 @@ const SubjectStyle = styled.h1`
 z-index: 2;
 color: #FFFFFF;
 letter-spacing: 4px;
-font-size: 20px;
+font-size: 25px;
 
-@media (max-width: 786px) {
+@media (min-width: 768px) {
 
     font-size: 40px;
 }

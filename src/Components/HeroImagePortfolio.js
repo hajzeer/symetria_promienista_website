@@ -36,7 +36,7 @@ color: #FFFFFF;
 letter-spacing: 4px;
 font-size: 30px;
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
 
     font-size: 40px;
 }
@@ -54,7 +54,7 @@ const StyledLink = styled(Link)`
     letter-spacing: 4px;
     font-size: 15px;
     
-    @media (max-width: 786px) {
+    @media (max-width: 768px) {
 
     font-size: 25px;
 }

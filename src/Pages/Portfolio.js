@@ -157,17 +157,23 @@ const ContainerStyled = styled.div`
   `;
 
 const WorkInnerStyled = styled.div`
-          margin-top: 5rem;
+width: 100%;
+                margin-top: 1rem;
       justify-items: center;
       margin-bottom: 20px;
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 15px;
+      grid-gap: 20px;
       
       @media (min-width: 1024px) {
+                margin-top: 5rem;
+      justify-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+      display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 40px;
+      grid-gap: 20px;
       }
     `;
 
