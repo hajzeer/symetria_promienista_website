@@ -11,7 +11,7 @@ const App = () => {
 
 
   return (
-      <Router forceRefresh={true}>
+      <Router>
       <div className="App">
                   <Route path="/" exact component={Home} />
                   <Route path="/portfolio" component={Portfolio} />
