@@ -29,6 +29,13 @@ const WorkImageStyled = styled.img`
     width: 300px;
     height: 300px;
     margin: 30px;
+    
+    @media (max-width: 786px) {
+    width: 600px;
+    height: 600px;
+    margin: 40px;
+    
+}
     `;
 
 const WorkList = ({items}) => (

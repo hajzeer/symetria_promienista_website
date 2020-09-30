@@ -34,11 +34,16 @@ z-index: 2;
 color: #FFFFFF;
 letter-spacing: 4px;
 font-size: 20px;
+
+@media (max-width: 786px) {
+
+    font-size: 40px;
+}
 `;
 
 const Parag = styled.p`
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 20px;
     z-index: 2;
     `;
 

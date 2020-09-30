@@ -156,6 +156,21 @@ const ContainerStyled = styled.div`
   box-shadow: 0 0 50rem #E3E3E3;
   `;
 
+const WorkInnerStyled = styled.div`
+          margin-top: 5rem;
+      justify-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+      
+      @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+      }
+    `;
+
 
 
 const Portfolio = () => {
@@ -200,7 +215,9 @@ const Portfolio = () => {
             <HeroImagePortfolio/>
         </WrapperStyled>
         <ContainerStyled>
+            <WorkInnerStyled>
             <WorkList items={WorkImg} key={WorkImg.id}/>
+            </WorkInnerStyled>
             <Contact/>
         </ContainerStyled>
         </div>

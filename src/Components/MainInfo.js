@@ -23,12 +23,17 @@ letter-spacing: 4px;
 font-weight: light;
 font-size: 30px;
 margin: 30px
+
 `;
 
 const StyledLink = styled(Link)`
     color: #777777;
     letter-spacing: 4px;
-    font-size: 35px;
+    font-size: 40px;
+    
+    @media (min-width: 768px) {
+        font-size: 50px;
+    }
     
 `
 
