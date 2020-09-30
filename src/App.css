@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Teko', sans-serif;
+  background-color: #FDEBEB;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gg-instagram {
+  color: #777777;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  border: 5px solid transparent;
+  box-shadow: 0 0 0 2px;
+  border-radius: 13px;
+  width: 50px;
+  height: 50px
+}
+.gg-instagram::after,
+.gg-instagram::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+}
+.gg-instagram::after {
+  border: 3px solid;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  top: 10px
+}
+.gg-instagram::before {
+  border-radius: 3px;
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  right: 1px;
+  top: 1px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.gg-mouse {
+  z-index: 2;
+  color: #FFFFFF;
+  right: -50px;
+  bottom: -50px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px
+}
+.gg-mouse::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  top: 5px;
+  left: 7px;
+  animation: jumper 1s infinite;
+}
+
+@keyframes jumper {
+  0% {
+    transform: translateY(0);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  100%{
+    transform: translateY(7px);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
