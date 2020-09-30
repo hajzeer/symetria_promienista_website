@@ -33,7 +33,7 @@ const SubjectStyle = styled.h1`
 z-index: 2;
 color: #FFFFFF;
 letter-spacing: 4px;
-font-size: 25px;
+font-size: 20px;
 
 @media (min-width: 768px) {
 
